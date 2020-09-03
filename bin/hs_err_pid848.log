@@ -1,0 +1,149 @@
+#
+# There is insufficient memory for the Java Runtime Environment to continue.
+# Native memory allocation (mmap) failed to map 1073741824 bytes for Failed to commit area from 0x1aa00000 to 0x5aa00000 of length 1073741824.
+# Possible reasons:
+#   The system is out of physical RAM or swap space
+#   In 32 bit mode, the process size limit was hit
+# Possible solutions:
+#   Reduce memory load on the system
+#   Increase physical memory or swap space
+#   Check if swap backing store is full
+#   Use 64 bit Java on a 64 bit OS
+#   Decrease Java heap size (-Xmx/-Xms)
+#   Decrease number of Java threads
+#   Decrease Java thread stack sizes (-Xss)
+#   Set larger code cache with -XX:ReservedCodeCacheSize=
+# This output file may be truncated or incomplete.
+#
+#  Out of Memory Error (os_windows.cpp:3332), pid=848, tid=7596
+#
+# JRE version:  (8.0_74-b02) (build )
+# Java VM: Java HotSpot(TM) Client VM (25.74-b02 mixed mode, sharing windows-x86 )
+# Failed to write core dump. Minidumps are not enabled by default on client versions of Windows
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x01eccc00):  JavaThread "Unknown thread" [_thread_in_vm, id=7596, stack(0x00450000,0x004a0000)]
+
+Stack: [0x00450000,0x004a0000],  sp=0x0049f468,  free space=317k
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+V  [jvm.dll+0x1a82db]
+V  [jvm.dll+0x1a0bd8]
+V  [jvm.dll+0x1c00ee]
+V  [jvm.dll+0x1610e1]
+V  [jvm.dll+0x26013f]
+V  [jvm.dll+0x26033b]
+V  [jvm.dll+0x2610c3]
+V  [jvm.dll+0x267c3f]
+V  [jvm.dll+0x268498]
+V  [jvm.dll+0x26863b]
+V  [jvm.dll+0x268b2e]
+V  [jvm.dll+0x24d94d]
+V  [jvm.dll+0x2531e4]
+V  [jvm.dll+0xa7e2b]
+V  [jvm.dll+0x157884]
+V  [jvm.dll+0x17b9db]
+V  [jvm.dll+0xe5551]
+C  [java.exe+0x14c6]
+C  [java.exe+0x203a]
+C  [java.exe+0xae9f]
+C  [java.exe+0xaf29]
+C  [kernel32.dll+0x1343d]
+C  [ntdll.dll+0x39832]
+C  [ntdll.dll+0x39805]
+C  0x00000000
+
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+
+Other Threads:
+
+=>0x01eccc00 (exited) JavaThread "Unknown thread" [_thread_in_vm, id=7596, stack(0x00450000,0x004a0000)]
+
+VM state:not at safepoint (not fully initialized)
+
+VM Mutex/Monitor currently owned by a thread:  ([mutex/lock_event])
+[0x01ecba58] Heap_lock - owner thread: 0x01eccc00
+
+GC Heap History (0 events):
+No events
+
+Deoptimization events (0 events):
+No events
+
+Internal exceptions (0 events):
+No events
+
+Events (0 events):
+No events
+
+
+Dynamic libraries:
+0x002e0000 - 0x00313000 	C:\ProgramData\Oracle\Java\javapath\java.exe
+0x77200000 - 0x77380000 	C:\Windows\SysWOW64\ntdll.dll
+0x76bc0000 - 0x76cd0000 	C:\Windows\syswow64\kernel32.dll
+0x76cd0000 - 0x76d17000 	C:\Windows\syswow64\KERNELBASE.dll
+0x75550000 - 0x755f1000 	C:\Windows\syswow64\ADVAPI32.dll
+0x74e20000 - 0x74ecc000 	C:\Windows\syswow64\msvcrt.dll
+0x765c0000 - 0x765d9000 	C:\Windows\SysWOW64\sechost.dll
+0x752b0000 - 0x753a0000 	C:\Windows\syswow64\RPCRT4.dll
+0x74d00000 - 0x74d60000 	C:\Windows\syswow64\SspiCli.dll
+0x74cf0000 - 0x74cfc000 	C:\Windows\syswow64\CRYPTBASE.dll
+0x74fa0000 - 0x750a0000 	C:\Windows\syswow64\USER32.dll
+0x75680000 - 0x75710000 	C:\Windows\syswow64\GDI32.dll
+0x754b0000 - 0x754ba000 	C:\Windows\syswow64\LPK.dll
+0x76650000 - 0x766ed000 	C:\Windows\syswow64\USP10.dll
+0x74310000 - 0x744ae000 	C:\Windows\WinSxS\x86_microsoft.windows.common-controls_6595b64144ccf1df_6.0.7601.17514_none_41e6975e2bd6f2b2\COMCTL32.dll
+0x74d60000 - 0x74db7000 	C:\Windows\syswow64\SHLWAPI.dll
+0x766f0000 - 0x76750000 	C:\Windows\system32\IMM32.DLL
+0x76d20000 - 0x76ded000 	C:\Windows\syswow64\MSCTF.dll
+0x6f5e0000 - 0x6f64a000 	C:\Program Files (x86)\McAfee\Endpoint Security\Threat Prevention\Ips\EpMPApi.dll
+0x76620000 - 0x7664f000 	C:\Windows\syswow64\WINTRUST.dll
+0x76760000 - 0x76882000 	C:\Windows\syswow64\CRYPT32.dll
+0x76750000 - 0x7675c000 	C:\Windows\syswow64\MSASN1.dll
+0x6f5d0000 - 0x6f5d9000 	C:\Program Files (x86)\McAfee\Endpoint Security\Threat Prevention\Ips\EpMPThe.dll
+0x6f590000 - 0x6f5c5000 	C:\Program Files (x86)\McAfee\Endpoint Security\Threat Prevention\Ips\HIPHandlers.dll
+0x76370000 - 0x76375000 	C:\Windows\syswow64\PSAPI.DLL
+0x75710000 - 0x7635c000 	C:\Windows\syswow64\SHELL32.dll
+0x765e0000 - 0x76615000 	C:\Windows\syswow64\WS2_32.dll
+0x76360000 - 0x76366000 	C:\Windows\syswow64\NSI.dll
+0x634f0000 - 0x635af000 	C:\Program Files (x86)\Java\jre1.8.0_74\bin\msvcr100.dll
+0x61420000 - 0x617e8000 	C:\Program Files (x86)\Java\jre1.8.0_74\bin\client\jvm.dll
+0x72320000 - 0x72327000 	C:\Windows\system32\WSOCK32.dll
+0x71ce0000 - 0x71d12000 	C:\Windows\system32\WINMM.dll
+0x72330000 - 0x72339000 	C:\Windows\system32\VERSION.dll
+0x6c330000 - 0x6c33c000 	C:\Program Files (x86)\Java\jre1.8.0_74\bin\verify.dll
+0x6c300000 - 0x6c321000 	C:\Program Files (x86)\Java\jre1.8.0_74\bin\java.dll
+0x6c2b0000 - 0x6c2c3000 	C:\Program Files (x86)\Java\jre1.8.0_74\bin\zip.dll
+0x746f0000 - 0x747db000 	C:\Windows\system32\dbghelp.dll
+
+VM Arguments:
+jvm_args: -XX:+HeapDumpOnOutOfMemoryError -Xms1g -Xmx1g -XX:MaxMetaspaceSize=256m -XX:+UseG1GC -XX:MaxGCPauseMillis=100 -XX:G1ReservePercent=20 -Djava.security.egd=file:/dev/urandom -Duser.language=en -Duser.region=EN 
+java_command: ApacheJMeter.jar
+java_class_path (initial): ApacheJMeter.jar
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+PATH=C:\Program Files\Common Files\Microsoft Shared\Windows Live;C:\Program Files (x86)\Common Files\Microsoft Shared\Windows Live;C:\app\chandrus\product\11.2.0\client_1\bin;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x86;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x64;C:\Program Files (x86)\HP\Virtual User Generator\strawberry-perl\perl\bin;C:\Program Files (x86)\Windows Live\Shared;D:\android-sdk\platform-tools;D:\android-sdk\tools
+USERNAME=chandrus
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 42 Stepping 7, GenuineIntel
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows 7 , 64 bit Build 7601 (6.1.7601.24214)
+
+CPU:total 4 (2 cores per cpu, 2 threads per core) family 6 model 42 stepping 7, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, sse4.1, sse4.2, popcnt, avx, clmul, ht, tsc, tscinvbit
+
+Memory: 4k page, physical 4009976k(927988k free), swap 8234856k(1054428k free)
+
+vm_info: Java HotSpot(TM) Client VM (25.74-b02) for windows-x86 JRE (1.8.0_74-b02), built on Jan 29 2016 17:47:57 by "java_re" with MS VC++ 10.0 (VS2010)
+
+time: Tue Nov 13 17:57:07 2018
+elapsed time: 0 seconds (0d 0h 0m 0s)
+
